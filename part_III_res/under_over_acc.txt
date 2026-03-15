@@ -1,0 +1,284 @@
+Degree 1
+
+1
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12830
+           3       0.74      0.60      0.66      3725
+
+    accuracy                           0.80     17778
+   macro avg       0.78      0.38      0.77     17778
+weighted avg       0.80      0.80      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   637    25]
+ [    0     0   557     4]
+ [    0     0 12070   760]
+ [    0     0  1494  2231]]
+
+ 2
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12829
+           3       0.74      0.61      0.67      3725
+
+    accuracy                           0.81     17778
+   macro avg       0.78      0.39      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   635    28]
+ [    0     0   560     1]
+ [    0     0 12062   767]
+ [    0     0  1456  2269]]
+
+ 3
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12829
+           3       0.75      0.61      0.67      3725
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.39      0.78     17778
+weighted avg       0.81      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   639    24]
+ [    0     0   555     6]
+ [    0     0 12105   724]
+ [    0     0  1446  2279]]
+
+ 4
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12830
+           3       0.75      0.60      0.67      3724
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.39      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   645    18]
+ [    0     0   556     5]
+ [    0     0 12116   714]
+ [    0     0  1478  2246]]
+
+ 5
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12830
+           3       0.74      0.62      0.67      3724
+
+    accuracy                           0.81     17777
+   macro avg       0.78      0.39      0.78     17777
+weighted avg       0.80      0.81      0.83     17777
+······ Confusion Matrix ······
+[[    0     0   628    34]
+ [    0     0   560     1]
+ [    0     0 12080   750]
+ [    0     0  1432  2292]]
+
+ Degree 2
+
+ 1
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.87     12830
+           3       0.74      0.59      0.65      3725
+
+    accuracy                           0.80     17778
+   macro avg       0.78      0.38      0.76     17778
+weighted avg       0.80      0.80      0.82     17778
+······ Confusion Matrix ······
+[[    0     0   638    24]
+ [    0     0   557     4]
+ [    0     0 12090   740]
+ [    0     0  1538  2187]]
+
+ 2
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12829
+           3       0.74      0.60      0.66      3725
+
+    accuracy                           0.80     17778
+   macro avg       0.78      0.38      0.77     17778
+weighted avg       0.80      0.80      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   636    27]
+ [    0     0   560     1]
+ [    0     0 12081   748]
+ [    0     0  1500  2225]]
+
+ 3
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12829
+           3       0.75      0.60      0.67      3725
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.39      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   641    22]
+ [    0     0   556     5]
+ [    0     0 12123   706]
+ [    0     0  1489  2236]]
+
+ 4
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.95      0.88     12830
+           3       0.76      0.59      0.66      3724
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.38      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   645    18]
+ [    0     0   557     4]
+ [    0     0 12142   688]
+ [    0     0  1529  2195]]
+
+ 5
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12830
+           3       0.75      0.61      0.67      3724
+
+    accuracy                           0.81     17777
+   macro avg       0.78      0.39      0.77     17777
+weighted avg       0.80      0.81      0.83     17777
+······ Confusion Matrix ······
+[[    0     0   629    33]
+ [    0     0   560     1]
+ [    0     0 12100   730]
+ [    0     0  1467  2257]]
+
+ Degree 3
+
+ 1
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.81      0.94      0.87     12830
+           3       0.74      0.58      0.65      3725
+
+    accuracy                           0.80     17778
+   macro avg       0.78      0.38      0.76     17778
+weighted avg       0.80      0.80      0.82     17778
+······ Confusion Matrix ······
+[[    0     0   639    23]
+ [    0     0   557     4]
+ [    0     0 12096   734]
+ [    0     0  1566  2159]]
+
+ 2
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12829
+           3       0.74      0.59      0.66      3725
+
+    accuracy                           0.80     17778
+   macro avg       0.78      0.38      0.77     17778
+weighted avg       0.80      0.80      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   636    27]
+ [    0     0   560     1]
+ [    0     0 12090   739]
+ [    0     0  1516  2209]]
+
+ 3
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.95      0.88     12829
+           3       0.75      0.59      0.66      3725
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.39      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   641    22]
+ [    0     0   557     4]
+ [    0     0 12134   695]
+ [    0     0  1511  2214]]
+
+ 4
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       663
+           1        nan      0.00       nan       561
+           2       0.82      0.95      0.88     12830
+           3       0.76      0.58      0.66      3724
+
+    accuracy                           0.81     17778
+   macro avg       0.79      0.38      0.77     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix ······
+[[    0     0   645    18]
+ [    0     0   557     4]
+ [    0     0 12148   682]
+ [    0     0  1553  2171]]
+
+ 5
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       662
+           1        nan      0.00       nan       561
+           2       0.82      0.94      0.88     12830
+           3       0.75      0.60      0.67      3724
+
+    accuracy                           0.81     17777
+   macro avg       0.78      0.39      0.77     17777
+weighted avg       0.80      0.81      0.83     17777
+······ Confusion Matrix ······
+[[    0     0   629    33]
+ [    0     0   560     1]
+ [    0     0 12109   721]
+ [    0     0  1492  2232]]
+
+ Train set accuracy:
+Degree 1 - 0.8071864919125336
+Degree 2 - 0.8059124312977419
+Degree 3 - 0.8050714948172455
+Test set accuracy:
+Degree 1 - 0.8071865053478472
+Degree 2 - 0.8059040118864127
+Degree 3 - 0.8050715121672163

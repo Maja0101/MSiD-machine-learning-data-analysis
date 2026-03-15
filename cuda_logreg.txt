@@ -1,0 +1,10 @@
+Training time: 1809.3867418766022
+linear.weight: Parameter containing:
+tensor([[-1.2961],
+        [-1.3457],
+        [-9.3335],
+        [ 9.0161]], device='cuda:0', requires_grad=True)
+linear.bias: Parameter containing:
+tensor([-3.7942, -3.8172,  8.8087,  0.1028], device='cuda:0',
+       requires_grad=True)
+Accuracy: 0.8093711328608393

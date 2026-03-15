@@ -1,0 +1,119 @@
+LogisticRegression
+Time: 0.3071424961090088
+Accuracy: 0.8079649004387445
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       666
+           1        nan      0.00       nan       537
+           2       0.82      0.94      0.88     12804
+           3       0.75      0.61      0.67      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.78      0.39      0.78     17778
+weighted avg       0.80      0.81      0.83     17778
+······ Confusion Matrix  ······
+[[    0     0   640    26]
+ [    0     0   536     1]
+ [    0     0 12046   758]
+ [    0     0  1453  2318]]
+
+DecisionTreeClassifier
+Time: 0.01699972152709961
+Accuracy: 0.8103273709078637
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.00      0.00       nan       666
+           1        nan      0.00       nan       537
+           2       0.84      0.92      0.88     12804
+           3       0.71      0.68      0.70      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.52      0.40      0.79     17778
+weighted avg       0.78      0.81      0.84     17778
+······ Confusion Matrix  ······
+[[    0     0   621    45]
+ [    0     0   512    25]
+ [    1     0 11825   978]
+ [    1     0  1189  2581]]
+
+SVC
+Time: 300.8373420238495
+Accuracy: 0.8104398695016313
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       666
+           1        nan      0.00       nan       537
+           2       0.84      0.92      0.88     12804
+           3       0.71      0.68      0.70      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.77      0.40      0.79     17778
+weighted avg       0.81      0.81      0.84     17778
+······ Confusion Matrix  ······
+[[    0     0   622    44]
+ [    0     0   517    20]
+ [    0     0 11834   970]
+ [    0     0  1197  2574]]
+
+KNeighborsClassifier
+Time: 0.02409529685974121
+Accuracy: 0.8092023849701879
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.17      0.00      0.00       666
+           1       0.50      0.00      0.00       537
+           2       0.83      0.93      0.88     12804
+           3       0.71      0.67      0.69      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.55      0.40      0.39     17778
+weighted avg       0.77      0.81      0.78     17778
+······ Confusion Matrix  ······
+[[    1     0   621    44]
+ [    0     1   515    21]
+ [    2     1 11845   956]
+ [    3     0  1229  2539]]
+
+VotingClassifier
+Time: 257.83191561698914
+Accuracy: 0.8105523680953988
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0        nan      0.00       nan       666
+           1        nan      0.00       nan       537
+           2       0.83      0.93      0.88     12804
+           3       0.72      0.68      0.70      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.78      0.40      0.79     17778
+weighted avg       0.81      0.81      0.84     17778
+······ Confusion Matrix  ······
+[[    0     0   627    39]
+ [    0     0   519    18]
+ [    0     0 11864   940]
+ [    0     0  1225  2546]]
+
+StackingClassifier
+Time: 1193.2542963027954
+Accuracy: 0.8103273709078637
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.00      0.00       nan       666
+           1        nan      0.00       nan       537
+           2       0.84      0.92      0.88     12804
+           3       0.71      0.68      0.70      3771
+
+    accuracy                           0.81     17778
+   macro avg       0.52      0.40      0.79     17778
+weighted avg       0.78      0.81      0.84     17778
+······ Confusion Matrix  ······
+[[    0     0   621    45]
+ [    0     0   513    24]
+ [    1     0 11827   976]
+ [    1     0  1191  2579]]

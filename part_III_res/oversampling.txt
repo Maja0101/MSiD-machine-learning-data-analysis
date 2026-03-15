@@ -1,0 +1,101 @@
+(88889, 6) before balancing
+(256592, 6) after oversampling
+
+······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.58      0.58      0.58     12830
+           1       0.54      0.43      0.48     12829
+           2       0.58      0.79      0.67     12830
+           3       0.83      0.69      0.75     12830
+
+    accuracy                           0.62     51319
+   macro avg       0.63      0.62      0.62     51319
+weighted avg       0.63      0.62      0.62     51319
+······ Confusion Matrix ······
+[[ 7481  3500  1217   632]
+ [ 4244  5478  2973   134]
+ [  627   969 10146  1088]
+ [  458   274  3260  8838]]
+
+
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.59      0.58      0.58     12830
+           1       0.54      0.44      0.48     12830
+           2       0.58      0.78      0.66     12829
+           3       0.82      0.69      0.75     12830
+
+    accuracy                           0.62     51319
+   macro avg       0.63      0.62      0.62     51319
+weighted avg       0.63      0.62      0.62     51319
+······ Confusion Matrix ······
+[[ 7472  3525  1168   665]
+ [ 4098  5593  2990   149]
+ [  696   990 10070  1073]
+ [  478   246  3245  8861]]
+
+
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.58      0.57      0.58     12829
+           1       0.53      0.42      0.47     12830
+           2       0.57      0.79      0.66     12829
+           3       0.82      0.69      0.75     12830
+
+    accuracy                           0.62     51318
+   macro avg       0.63      0.62      0.62     51318
+weighted avg       0.63      0.62      0.62     51318
+······ Confusion Matrix ······
+[[ 7359  3581  1228   661]
+ [ 4167  5436  3089   138]
+ [  680   975 10078  1096]
+ [  452   261  3246  8871]]
+
+
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.58      0.59      0.59     12829
+           1       0.54      0.43      0.48     12830
+           2       0.57      0.78      0.66     12830
+           3       0.83      0.69      0.75     12829
+
+    accuracy                           0.62     51318
+   macro avg       0.63      0.62      0.62     51318
+weighted avg       0.63      0.62      0.62     51318
+······ Confusion Matrix ······
+[[ 7520  3395  1246   668]
+ [ 4203  5477  3010   140]
+ [  705  1033 10034  1058]
+ [  446   293  3263  8827]]
+
+
+ ······ Clasification Report ······
+              precision    recall  f1-score   support
+
+           0       0.60      0.59      0.59     12830
+           1       0.54      0.43      0.48     12829
+           2       0.57      0.79      0.66     12830
+           3       0.82      0.69      0.75     12829
+
+    accuracy                           0.62     51318
+   macro avg       0.63      0.62      0.62     51318
+weighted avg       0.63      0.62      0.62     51318
+······ Confusion Matrix ······
+[[ 7569  3442  1167   652]
+ [ 4050  5508  3100   171]
+ [  647  1027 10076  1080]
+ [  431   248  3305  8845]]
+
+
+Train set accuracy:
+Degree 2 - 0.6219075408110241
+Test set accuracy:
+Degree 2 - 0.6217613862082707
+Train set last loss:
+Degree 2 - 0.9447270908929484
+Test set last loss:
+Degree 2 - 0.9456008403599974

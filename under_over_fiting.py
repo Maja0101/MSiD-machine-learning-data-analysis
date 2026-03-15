@@ -1,0 +1,130 @@
+from utils import prepare_data
+from CustomLogisticRegression import CustomLogisticRegression
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from time import time
+from sklearn.model_selection import StratifiedKFold
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, classification_report
+import numpy as np
+
+X, y = prepare_data(more_data=True)
+
+# X, _, y, _ = train_test_split(X, y, train_size=0.5, stratify=y, random_state=30)
+
+degrees = [2]
+
+avg_train_losses = {d: [] for d in degrees}
+avg_test_losses = {d: [] for d in degrees}
+avg_train_scores = {d: 0.0 for d in degrees}
+avg_test_scores = {d: 0.0 for d in degrees}
+times = {d: [] for d in degrees}
+
+for d in degrees:
+    print(f"Training for degree {d}")
+
+    poly = PolynomialFeatures(degree=d, include_bias=False)
+    X_poly = poly.fit_transform(X)
+
+    scaler = StandardScaler()
+    X_poly = scaler.fit_transform(X_poly)
+
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=39)
+
+    fold_train_losses = []
+    fold_test_losses = []
+
+    fold_train_scores = []
+    fold_test_scores = []
+
+    print("preparation finished")
+
+    for train_index, test_index in skf.split(X_poly, y):
+        print("dividing data")
+        X_train_fold, X_test_fold = X_poly[train_index], X_poly[test_index]
+        y_train_fold, y_test_fold = y[train_index], y[test_index]
+
+        print("creating and trainig model")
+
+        model = CustomLogisticRegression(lr=0.0001, epochs=500)
+
+        start_time = time()
+        model.fit(X_train_fold, y_train_fold, X_test_fold, y_test_fold)
+        end_time = time()
+
+        print("end of training")
+
+        # print("\n\n······ Clasification Report ······")
+        # print(classification_report(y_test_fold, model.predict(X_test_fold), zero_division=np.nan))
+        # print("\n\n······ Confusion Matrix ······")
+        # print(confusion_matrix(y_test_fold, model.predict(X_test_fold)))
+        
+        fold_train_losses.append(model.train_losses)
+        fold_test_losses.append(model.test_losses)
+
+        fold_train_scores.append(model.score(X_train_fold, y_train_fold))
+        fold_test_scores.append(model.score(X_test_fold, y_test_fold))
+
+        times[d].append(end_time - start_time)
+
+    print("calculating avgs")
+
+    fold_train_losses = list(zip(*fold_train_losses))  
+    fold_test_losses = list(zip(*fold_test_losses))  
+    
+    avg_train_losses[d] = [sum(epoch_losses) / len(epoch_losses) for epoch_losses in fold_train_losses]
+    avg_test_losses[d] = [sum(epoch_losses) / len(epoch_losses) for epoch_losses in fold_test_losses]
+
+    # avg_train_losses[d] = np.mean(fold_train_losses)
+    # avg_test_losses[d] = np.mean(fold_test_losses)
+
+    avg_train_scores[d] = np.mean(fold_train_scores)
+    avg_test_scores[d] = np.mean(fold_test_scores)
+
+print("Train set accuracy:")
+for key, val in avg_train_scores.items():
+    print(f"Degree {key} - {val}")
+
+print("Test set accuracy:")
+for key, val in avg_test_scores.items():
+    print(f"Degree {key} - {val}")
+
+with open("xxx.txt", "a") as f:
+    f.write("Times:\n")
+    #print("\n\nTimes:")
+    for key, val in times.items():
+        f.write(f"\nDegree {key} - \n")
+        for elem in val:
+            f.write(f"{elem} ")
+        # print(f"Degree {key} - {val}")
+        f.write("\n")
+
+    f.write("\n\nTrain set losses:\n")
+    # print("\n\nTrain set losses:")
+    for key, val in avg_train_losses.items():
+        f.write(f"\nDegree {key}\n")
+        # print(f"Degree {key}")
+        for elem in val:
+            f.write(f"{elem}\n")
+        # print(val)
+
+    f.write("\n\nTest set losses:\n")
+    # print("\n\nTest set losses:")
+    for key, val in avg_test_losses.items():
+        f.write(f"\nDegree {key}\n")
+        # print(f"Degree {key}")
+        for elem in val:
+            f.write(f"{elem}\n")
+        # print(val)
+
+for d in degrees:
+    plt.plot(avg_train_losses[d], label=f"Train - Degree {d}", color=f"C{d}")
+    plt.plot(avg_test_losses[d], linestyle=":", label=f"Test - Degree {d}", color=f"C{d}")
+
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.title("Loss for data with more features")
+plt.legend()
+plt.grid(True)
+plt.show()
